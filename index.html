@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/style.css?v=2">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1>マイイレ - サッカーの選手評価・記録アプリ</h1>
   </header>
 
@@ -15,19 +15,34 @@
     <!-- イントロ -->
     <section id="about" class="card">
       <h2>はじめに</h2>
-      <p>「アプリの紹介」は <a target="_blank" href="https://note.com/bright_ixia5175/n/n8eafc369d2af">note記事</a> に掲載しています。ここでは、<strong>実際に使い始めるための詳細な手順</strong>を説明します。</p>
-      <ul class="checklist">
-        <li>画像はイメージです。バージョンにより表示が異なる場合があります。</li>
-      </ul>
+      <p>本アプリは、<strong>クラブ（クラブ全体を管理するクラブサポーター向け）</strong> と <strong>選手個人（1人の選手に集中して管理する個人サポーター向け）</strong>の2つの軸で評価を記録・可視化できます。</p>
+      <p>このページは、インストール直後に迷わないための<strong>実用的な操作ガイド</strong>です。まずは、ご自身の用途に近い方から始めてみてください。</p>
+      <div class="cta-grid">
+        <a class="cta-card" href="#club-flow">
+          <span class="cta-eyebrow">クラブで管理したい方</span>
+          <strong class="cta-title">クラブメニューの使い方へ</strong>
+          <span class="cta-desc">クラブ登録 → 選手登録 → 試合登録 → 評価 → 画像生成</span>
+        </a>
+        <a class="cta-card" href="#personal-flow">
+          <span class="cta-eyebrow">個人選手を記録したい方</span>
+          <strong class="cta-title">選手個人メニューの使い方へ</strong>
+          <span class="cta-desc">選手登録 → 試合登録 → 評価 → プロフィール/履歴 → 画像生成</span>
+        </a>
+      </div>
+      <p class="small">
+        宣伝を兼ねた全体紹介は
+        <a target="_blank" href="https://note.com/bright_ixia5175/n/n8eafc369d2af">note記事</a>
+        をご覧ください。
+      </p>
     </section>
 
     <!-- 目次 -->
-    <nav class="toc card" aria-label="ページ内目次">
+    <nav　id="guides" class="toc card" aria-label="ページ内目次">
       <h2>ガイド一覧</h2>
     
       <ul class="toc-group">
         <li>
-          <span class="toc-heading">クラブ機能</span>
+          <span class="toc-heading">クラブメニュー</span>
           <ol>
             <li><a href="#club-step1">STEP1 アプリのダウンロード</a></li>
             <li><a href="#club-step2">STEP2 クラブ登録</a></li>
@@ -39,7 +54,7 @@
         </li>
     
         <li>
-          <span class="toc-heading">個人選手機能</span>
+          <span class="toc-heading">選手個人メニュー</span>
           <ol>
             <li><a href="#personal-step1">STEP1 アプリのダウンロード</a></li>
             <li><a href="#personal-step2">STEP2 選手の登録</a></li>
@@ -54,7 +69,7 @@
     <!-- Flow 1: クラブサポーター向け -->
     <article id="club-flow" class="card flow">
       <header class="flow-header">
-        <h2>クラブ機能【クラブサポーター向けの流れ】</h2>
+        <h2>クラブメニュー【クラブサポーター向けの流れ】</h2>
         <p class="flow-lead">クラブ単位で選手を管理し、試合ごとに評価。選手一覧や試合ごとの評価を画像生成してSNSなどで共有できます。</p>
       </header>
 
@@ -91,7 +106,6 @@
         <li id="club-step4" class="step">
           <h3>Step 4. 試合登録</h3>
           <p>ホーム &rarr; クラブ名 &rarr; 評価入力</p>
-          <img src="images/club/rating-tab.PNG" alt="評価入力タブ" />
           <p>評価入力画面に遷移します。</p>
           <p><strong>試合を追加</strong>（「＋」ボタン）します。</p>
           <img src="images/club/add-match.PNG" alt="試合追加" />
@@ -134,11 +148,12 @@
         </ul>
       </aside>
     </article>
-
+    <p class="backtotop"><a href="#guides">▲ 目次に戻る</a></p>
+    
     <!-- Flow 2: 個人選手向け -->
     <article id="personal-flow" class="card flow">
       <header class="flow-header">
-        <h2>選手個人機能【選手個人のサポーター向けの流れ】</h2>
+        <h2>選手個人メニュー【選手個人のサポーター向けの流れ】</h2>
         <p class="flow-lead">個人の選手だけに焦点を当て、試合ごとにより細かく評価。プロフィールや試合ごとの評価を画像生成してSNSなどで共有できます。</p>
       </header>
 
@@ -210,6 +225,7 @@
         </li>
       </ol>
     </article>
+    <p class="backtotop"><a href="#guides">▲ 目次に戻る</a></p>
 
     <!-- サポート -->
     <section id="support" class="card">
