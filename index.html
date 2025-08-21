@@ -24,26 +24,47 @@
     <!-- 目次 -->
     <nav class="toc card" aria-label="ページ内目次">
       <h2>ガイド一覧</h2>
-      <ol id="guides">
-        <li><a href="#club-flow">クラブ機能（クラブサポーター向け）：ダウンロード → クラブ登録 → 選手登録 → 試合登録 → 評価　その他：選手詳細、画像生成</a></li>
-        <li><a href="#personal-flow">選手個人機能（個人サポーター向け）：ダウンロード → 選手登録 → 試合登録 → 評価 その他：プロフィール入力、履歴確認、画像生成</a></li>
-      </ol>
+    
+      <ul class="toc-group">
+        <li>
+          <span class="toc-heading">クラブ機能</span>
+          <ol>
+            <li><a href="#club-step1">STEP1 アプリのダウンロード</a></li>
+            <li><a href="#club-step2">STEP2 クラブ登録</a></li>
+            <li><a href="#club-step3">STEP3 選手登録</a></li>
+            <li><a href="#club-step4">STEP4 試合登録</a></li>
+            <li><a href="#club-step5">STEP5 評価入力（★）</a></li>
+            <li><a href="#club-step6">その他機能</a></li>
+          </ol>
+        </li>
+    
+        <li>
+          <span class="toc-heading">個人選手機能</span>
+          <ol>
+            <li><a href="#personal-step1">STEP1 アプリのダウンロード</a></li>
+            <li><a href="#personal-step2">STEP2 選手の登録</a></li>
+            <li><a href="#personal-step3">STEP3 試合登録</a></li>
+            <li><a href="#personal-step4">STEP4 評価入力（★）</a></li>
+            <li><a href="#personal-step5">その他機能</a></li>
+          </ol>
+        </li>
+      </ul>
     </nav>
 
     <!-- Flow 1: クラブサポーター向け -->
     <article id="club-flow" class="card flow">
       <header class="flow-header">
-        <h2>クラブサポーター向けの流れ</h2>
-        <p class="flow-lead">クラブ単位で選手を管理し、試合ごとに採点。クラブカラーで画像を生成してSNSで共有できます。</p>
+        <h2>クラブ機能【クラブサポーター向けの流れ】</h2>
+        <p class="flow-lead">クラブ単位で選手を管理し、試合ごとに評価。選手一覧や試合ごとの評価を画像生成してSNSなどで共有できます。</p>
       </header>
 
       <ol class="steps">
-        <li class="step">
+        <li id="club-step1" class="step">
           <h3>Step 1. ダウンロード</h3>
           <p><a class="inline-cta" target="_blank" href="https://apps.apple.com/jp/app/%E3%83%9E%E3%82%A4%E3%82%A4%E3%83%AC-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%AE%E9%81%B8%E6%89%8B%E8%A9%95%E4%BE%A1-%E8%A8%98%E9%8C%B2%E3%82%A2%E3%83%97%E3%83%AA/id6748753545">App Store</a> からアプリをインストール。</p>
         </li>
 
-        <li class="step">
+        <li id="club-step2" class="step">
           <h3>Step 2. クラブ登録</h3>
           <p>ホーム &rarr; <strong>クラブ追加</strong>（「＋ 新規」ボタン）</p>
           <img src="images/club/add-club.PNG" alt="クラブ追加" />
@@ -56,7 +77,7 @@
           <p>シーズン名を入力して、保存します。</p>
         </li>
 
-        <li class="step">
+        <li id="club-step3" class="step">
           <h3>Step 3. 選手登録</h3>
           <p>ホーム &rarr; クラブ名 &rarr; <strong>選手設定</strong>（「⚙」ボタン）</p>
           <img src="images/club/player-setting.PNG" alt="選手設定" />
@@ -67,16 +88,19 @@
           <img src="images/club/player-setting2.PNG" alt="選手一覧" />
         </li>
 
-        <li class="step">
+        <li id="club-step4" class="step">
           <h3>Step 4. 試合登録</h3>
-          <p>ホーム &rarr; クラブ名 &rarr; 評価入力 &rarr; <strong>試合追加</strong>（「＋」ボタン）。</p>
+          <p>ホーム &rarr; クラブ名 &rarr; 評価入力</p>
+          <img src="images/club/rating-tab.PNG" alt="評価入力タブ" />
+          <p>評価入力画面に遷移します。</p>
+          <p><strong>試合を追加</strong>（「＋」ボタン）します。</p>
           <img src="images/club/add-match.PNG" alt="試合追加" />
           <img src="images/club/add-match2.PNG" alt="試合追加" />
           <p>試合名を入力してください。</p>
-          <div class="tip">試合名は後から変更可能です。</div>
+         <div class="note">試合名は後から変更可能です。日付や試合名の入力でわかりやすくなります。</div>
         </li>
 
-        <li class="step">
+        <li id="club-step5" class="step">
           <h3>Step 5. 評価入力（★）</h3>
           <p>ホーム &rarr; クラブ名 &rarr; <strong>評価入力</strong></p>
           <img src="images/club/rating.PNG" alt="評価入力画面" />
@@ -89,12 +113,13 @@
           <img src="images/club/select-mom.PNG" alt="MOM選択" />
         </li>
 
-        <li class="step">
+        <li id="club-step6" class="step">
           <h3>その他機能 選手詳細（統計）</h3>
           <p>ホーム &rarr; クラブ名 &rarr; 選手一覧 &rarr; <strong>選手詳細</strong>（各選手をタップ）</p>
           <p>平均評価やMOM回数を自動集計します。<br/>折れ線グラフで評価推移（直近5試合／全試合）を切替表示。</p>
           <img src="images/club/player-detail.png" alt="選手詳細と評価推移グラフ" />
           <h3>その他機能 画像生成（共有）</h3>
+          <p>ホーム &rarr; クラブ名 &rarr; <strong>投稿用</strong>（タブバー「カメラ」ボタンをタップ）</p>
           <p>試合ごとの評価まとめ、選手一覧、選手詳細などを画像として保存。<br/>クラブカラーを活かしたデザインでSNSシェアに最適です。</p>
           <div class="tip">縦長画像はInstagramで2〜3分割して投稿すると見やすく表示できます。</div>
           <img src="images/club/post.PNG" alt="画像生成と保存の画面" />
@@ -113,53 +138,75 @@
     <!-- Flow 2: 個人選手向け -->
     <article id="personal-flow" class="card flow">
       <header class="flow-header">
-        <h2>② 個人選手向けの流れ</h2>
-        <p class="flow-lead">自分のプレー記録を残したい方向け。試合ごとに自己評価し、プロフィールや履歴をまとめて画像化できます。</p>
+        <h2>選手個人機能【選手個人のサポーター向けの流れ】</h2>
+        <p class="flow-lead">個人の選手だけに焦点を当て、試合ごとにより細かく評価。プロフィールや試合ごとの評価を画像生成してSNSなどで共有できます。</p>
       </header>
 
       <ol class="steps">
-        <li class="step">
+        <li id="personal-step1" class="step">
           <h3>Step 1. ダウンロード</h3>
-          <p><a class="inline-cta" target="_blank" href="https://apps.apple.com/jp/app/＜あなたのアプリの実リンク＞">App Store</a> からインストール。</p>
-          <img src="images/personal/step1.png" alt="App Storeからのダウンロード画面" />
+          <p><a class="inline-cta" target="_blank" href="https://apps.apple.com/jp/app/%E3%83%9E%E3%82%A4%E3%82%A4%E3%83%AC-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%AE%E9%81%B8%E6%89%8B%E8%A9%95%E4%BE%A1-%E8%A8%98%E9%8C%B2%E3%82%A2%E3%83%97%E3%83%AA/id6748753545">App Store</a> からアプリをインストール。</p>
         </li>
 
-        <li class="step">
-          <h3>Step 2. 選手個人の登録</h3>
-          <p>ホーム &rarr; <strong>個人選手を追加</strong>。名前・背番号・ポジションを設定。</p>
-          <div class="note">プレイヤーカラーを設定するとプロフィール画像が映えます。</div>
-          <img src="images/personal/step2.png" alt="個人選手の登録画面" />
+        <li id="personal-step2" class="step">
+          <h3>Step 2. 選手の登録</h3>
+          <p>ホーム &rarr; <strong>選手を追加</strong>（「＋ 新規」ボタン）</p>
+          <img src="images/personal/add-player.PNG" alt="個人選手の追加" />
+          <img src="images/personal/name-color.PNG" alt="選手設定画面" />
+          <p>名前・背番号・ポジションを設定します。</p>
+          <p>背景色・文字色をプレイヤーカラーに設定すると、<strong>画像生成の配色</strong>に反映されます。</p>
+          <div class="tip">色は後から変更可能です。文字色は可読性重視で調整をしてください。</div>
+          <p>続いて、<strong>シーズンを追加</strong>します。（「＋ 新規」ボタン）</p>
+          <img src="images/personal/add-season.PNG" alt="シーズン追加" />
+          <img src="images/personal/add-season2.PNG" alt="シーズン追加" />
+          <p>シーズン名を入力して、保存します。</p>
         </li>
 
-        <li class="step">
+        <li id="personal-step3" class="step">
           <h3>Step 3. 試合登録</h3>
-          <p><strong>試合を追加</strong>し、日付・試合名などを記録。</p>
-          <img src="images/personal/step3.png" alt="個人向け試合追加画面" />
+          <p>ホーム &rarr; 選手名 &rarr; 試合記録入力（タブバー「記録」ボタン）</p>
+          <img src="images/personal/record-button.PNG" alt="記録ボタン" />
+          <p>試合記録入力画面に遷移します。</p>
+          <p><strong>試合を追加</strong>（「＋」ボタン）をします。</p>
+          <img src="images/personal/add-match.PNG" alt="試合追加" />
+          <img src="images/personal/add-match2.PNG" alt="試合追加" />
+          <p>試合名を入力してください。</p>
+          <div class="note">試合名は後から変更可能です。日付や試合名の入力でわかりやすくなります。</div>
         </li>
 
-        <li class="step">
-          <h3>Step 4. 評価入力（★）・メモ・タグ</h3>
-          <p>試合を選択し、星評価を入力。短いメモやタグを付けて管理すると後から検索しやすくなります。</p>
-          <img src="images/personal/step4.png" alt="個人向け評価入力とタグ付け画面" />
+        <li id="personal-step4" class="step">
+          <h3>Step 4. 評価入力（★）</h3>
+          <p>ホーム &rarr; 選手名 &rarr; 試合記録入力（タブバー「記録」ボタンをタップ）</p>
+          <img src="images/personal/rating.PNG" alt="評価入力画面" />
+          <p>試合名が入力されていることを確認して「未入力」欄をタップして<strong>星評価</strong>を入力できます。</p>
+          <img src="images/personal/rating2.PNG" alt="★入力" />
+          <p>試合の<strong>一言メモ(20文字まで)</strong>を残せます。</p>
+          <img src="images/personal/short-comment.PNG" alt="一言入力" />
+          <div class="tip">一言メモは履歴一覧で振り返ることができます。</div>
+          <p>タグを付けて管理すると後から検索しやすくなります。</p>
+          <img src="images/personal/tag.PNG" alt="タグ入力" />
+          <div class="tip">印象に残ったことや結果などをタグで管理します。</div>
+          <p>さらに試合の<strong>詳細メモ(200文字まで)</strong>も残すことができます。</p>
+          <img src="images/personal/long-comment.PNG" alt="詳細メモ入力" />
         </li>
 
-        <li class="step">
-          <h3>Step 5. プロフィール入力</h3>
-          <p>選手プロフィールにノートを追加して自分の特徴・課題・目標を整理。</p>
-          <img src="images/personal/step5.png" alt="選手プロフィール編集画面" />
-        </li>
-
-        <li class="step">
-          <h3>Step 6. 履歴確認（直近／全期間）</h3>
-          <p>評価履歴を一覧で確認。シーズンやタグで絞り込みも可能。</p>
-          <img src="images/personal/step6.png" alt="評価履歴の一覧画面" />
-        </li>
-
-        <li class="step">
-          <h3>Step 7. 画像生成（共有）</h3>
-          <p>プロフィール画像、試合記録画像、コメント付き画像などを生成して保存・共有。</p>
-          <div class="tip">「直近5試合／全試合」を選んで推移グラフを含めた画像出力も可能です。</div>
-          <img src="images/personal/step7.png" alt="個人向け画像生成と保存の画面" />
+        <li id="personal-step5" class="step">
+          <h3>その他機能 プロフィール入力</h3>
+          <p>ホーム &rarr; 選手名 &rarr; <strong>選手プロフィール画面</strong>（タブバー「選手」ボタンをタップ）</p>
+          <img src="images/personal/player-button.PNG" alt="選手ボタン" />
+          <p>プレイヤーノートに入力して選手の特徴や魅力、目標などを整理。</p>
+          <img src="images/personal/profile.PNG" alt="選手プロフィール画面" />
+          <p>平均評価や記録試合数を自動集計します。<br/>折れ線グラフで評価推移（直近5試合／全試合）を切替表示。</p>
+          <h3>その他機能 履歴確認</h3>
+          <p>ホーム &rarr; 選手名 &rarr; <strong>選手プロフィール画面</strong>（タブバー「選手」ボタンをタップ）</p>
+          <img src="images/personal/history-button.PNG" alt="履歴ボタン" />
+          <p>評価履歴を一覧で確認できます。タグで絞り込みも可能。</p>
+          <img src="images/personal/history.PNG" alt="評価履歴の一覧画面" />
+          <h3>その他機能 画像生成（共有）</h3>
+          <p>ホーム &rarr; 選手名 &rarr; <strong>投稿用</strong>（タブバー「カメラ」ボタンをタップ）</p>
+          <img src="images/personal/camera-button.PNG" alt="カメラボタン" />
+          <p>試合ごとの選手プロフィールや試合の評価を画像として保存。<br/>プレイヤーカラーを活かしたデザインでSNSシェアに最適です。</p>
+          <img src="images/personal/post.PNG" alt="個人向け画像生成と保存の画面" />
         </li>
       </ol>
     </article>
@@ -167,11 +214,10 @@
     <!-- サポート -->
     <section id="support" class="card">
       <h2>サポート</h2>
-      <p>不具合報告・ご要望は <a href="mailto:＜サポート用メール＞">メール</a> へ。スクリーンショットを添付いただくと原因特定が早くなります。</p>
+      <p>不具合報告・ご要望は <a href="mailto:tmkt.apps+myele@gmail.com">メール</a> へ。スクリーンショットを添付いただくと原因特定が早くなります。</p>
       <ul class="list-inline">
-        <li><a target="_blank" href="https://note.com/＜あなたのnoteの実リンク＞">note（アプリ紹介・更新情報）</a></li>
-        <li><a target="_blank" href="https://x.com/＜あなたのX＞">X（旧Twitter）</a></li>
-        <li><a target="_blank" href="https://instagram.com/＜あなたのInstagram＞">Instagram</a></li>
+        <li><a target="_blank" href="https://note.com/bright_ixia5175">note（アプリ紹介・更新情報）</a></li>
+        <li><a target="_blank" href="https://x.com/myele_tmkt_apps?s=21&t=WkSwfBNDjPVtsWyIZ0dHPA">X（旧Twitter）</a></li>
       </ul>
     </section>
   </main>
