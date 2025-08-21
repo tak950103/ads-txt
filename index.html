@@ -4,10 +4,160 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>マイイレ - サッカーの選手評価・記録アプリ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>マイイレ - サッカーの選手評価・記録アプリ</h1>
-  <p>このサイトは「マイイレ」公式サイトです。</p>
-  <p>アプリの詳細は <a href="https://apps.apple.com/jp/app/">App Store</a> をご覧ください。</p>
+  <header>
+    <h1>マイイレ - サッカーの選手評価・記録アプリ</h1>
+  </header>
+
+  <main id="content" class="container main">
+    <!-- イントロ -->
+    <section id="about" class="card">
+      <h2>はじめに</h2>
+      <p>「宣伝込みの概要ガイド」は <a target="_blank" href="https://note.com/＜あなたのnoteの実リンク＞">note記事</a> に掲載しています。ここでは、<strong>実際に使い始めるための詳細な手順</strong>を説明します。</p>
+      <ul class="checklist">
+        <li>画像はイメージです。バージョンにより表示が異なる場合があります。</li>
+        <li>データは端末内に保存（Realm）されます。バックアップ方法は後述。</li>
+      </ul>
+    </section>
+
+    <!-- 目次 -->
+    <nav class="toc card" aria-label="ページ内目次">
+      <h2>ガイド一覧</h2>
+      <ol id="guides">
+        <li><a href="#club-flow">① クラブサポーター向け：ダウンロード → クラブ登録 → 選手登録 → 試合登録 → 評価 → 選手詳細 → 画像生成</a></li>
+        <li><a href="#personal-flow">② 個人選手向け：ダウンロード → 選手個人登録 → 試合登録 → 評価 → プロフィール入力 → 履歴確認 → 画像生成</a></li>
+      </ol>
+    </nav>
+
+    <!-- Flow 1: クラブサポーター向け -->
+    <article id="club-flow" class="card flow">
+      <header class="flow-header">
+        <h2>① クラブサポーター向けの流れ</h2>
+        <p class="flow-lead">クラブ単位で選手を管理し、試合ごとに採点。クラブカラーで画像を生成してSNSで共有できます。</p>
+      </header>
+
+      <ol class="steps">
+        <li class="step">
+          <h3>Step 1. ダウンロード</h3>
+          <p><a class="inline-cta" target="_blank" href="https://apps.apple.com/jp/app/＜あなたのアプリの実リンク＞">App Store</a> からアプリをインストール。</p>
+          <img src="images/club/step1.png" alt="App Storeからのダウンロード画面" />
+        </li>
+
+        <li class="step">
+          <h3>Step 2. クラブ登録（色設定）</h3>
+          <p>ホーム &rarr; <strong>クラブ追加</strong>。<br/>背景色・文字色をクラブカラーに設定すると、<strong>画像生成の配色</strong>に反映されます。</p>
+          <div class="tip">色は後から変更可能。文字色は可読性重視で調整を。</div>
+          <img src="images/club/step2.png" alt="クラブ追加とカラー設定画面" />
+        </li>
+
+        <li class="step">
+          <h3>Step 3. 選手登録（シーズン管理）</h3>
+          <p>クラブ詳細 &rarr; <strong>選手追加</strong>。シーズン単位で管理できます。<br/>過去シーズンからの引き継ぎも可能で、更新が簡単です。</p>
+          <img src="images/club/step3.png" alt="選手一覧と追加画面" />
+        </li>
+
+        <li class="step">
+          <h3>Step 4. 試合登録</h3>
+          <p>シーズンを選択 &rarr; <strong>試合追加</strong>（試合名を入力）。</p>
+          <img src="images/club/step4.png" alt="試合追加画面" />
+        </li>
+
+        <li class="step">
+          <h3>Step 5. 評価入力（★）とMOM</h3>
+          <p>試合を開き、各選手をタップして<strong>星評価</strong>を入力。<br/>MOM（マン・オブ・ザ・マッチ）も選出できます。<br/>一言メモで試合の感想を残せます。</p>
+          <div class="note">録画や観戦メモがある場合は短文でもOK。後で振り返りやすくなります。</div>
+          <img src="images/club/step5.png" alt="評価入力画面" />
+        </li>
+
+        <li class="step">
+          <h3>Step 6. 選手詳細（統計）</h3>
+          <p>平均評価やMOM回数を自動集計。<br/>折れ線グラフで評価推移（直近5試合／全試合）を切替表示。</p>
+          <img src="images/club/step6.png" alt="選手詳細と評価推移グラフ" />
+        </li>
+
+        <li class="step">
+          <h3>Step 7. 画像生成（共有）</h3>
+          <p>試合ごとの評価まとめ、選手一覧、選手詳細などを画像として保存。<br/>クラブカラーを活かしたデザインでSNSシェアに最適です。</p>
+          <div class="tip">縦長画像はInstagramで2〜3分割して投稿すると見やすく表示できます。</div>
+          <img src="images/club/step7.png" alt="画像生成と保存の画面" />
+        </li>
+      </ol>
+
+      <aside class="faqish">
+        <h3>補足：バックアップ／復元</h3>
+        <ul>
+          <li>端末変更時は、今後のアップデートでエクスポート機能を提供予定です。</li>
+          <li>同一端末内のデータはアプリを削除すると消えますのでご注意ください。</li>
+        </ul>
+      </aside>
+    </article>
+
+    <!-- Flow 2: 個人選手向け -->
+    <article id="personal-flow" class="card flow">
+      <header class="flow-header">
+        <h2>② 個人選手向けの流れ</h2>
+        <p class="flow-lead">自分のプレー記録を残したい方向け。試合ごとに自己評価し、プロフィールや履歴をまとめて画像化できます。</p>
+      </header>
+
+      <ol class="steps">
+        <li class="step">
+          <h3>Step 1. ダウンロード</h3>
+          <p><a class="inline-cta" target="_blank" href="https://apps.apple.com/jp/app/＜あなたのアプリの実リンク＞">App Store</a> からインストール。</p>
+          <img src="images/personal/step1.png" alt="App Storeからのダウンロード画面" />
+        </li>
+
+        <li class="step">
+          <h3>Step 2. 選手個人の登録</h3>
+          <p>ホーム &rarr; <strong>個人選手を追加</strong>。名前・背番号・ポジションを設定。</p>
+          <div class="note">プレイヤーカラーを設定するとプロフィール画像が映えます。</div>
+          <img src="images/personal/step2.png" alt="個人選手の登録画面" />
+        </li>
+
+        <li class="step">
+          <h3>Step 3. 試合登録</h3>
+          <p><strong>試合を追加</strong>し、日付・試合名などを記録。</p>
+          <img src="images/personal/step3.png" alt="個人向け試合追加画面" />
+        </li>
+
+        <li class="step">
+          <h3>Step 4. 評価入力（★）・メモ・タグ</h3>
+          <p>試合を選択し、星評価を入力。短いメモやタグを付けて管理すると後から検索しやすくなります。</p>
+          <img src="images/personal/step4.png" alt="個人向け評価入力とタグ付け画面" />
+        </li>
+
+        <li class="step">
+          <h3>Step 5. プロフィール入力</h3>
+          <p>選手プロフィールにノートを追加して自分の特徴・課題・目標を整理。</p>
+          <img src="images/personal/step5.png" alt="選手プロフィール編集画面" />
+        </li>
+
+        <li class="step">
+          <h3>Step 6. 履歴確認（直近／全期間）</h3>
+          <p>評価履歴を一覧で確認。シーズンやタグで絞り込みも可能。</p>
+          <img src="images/personal/step6.png" alt="評価履歴の一覧画面" />
+        </li>
+
+        <li class="step">
+          <h3>Step 7. 画像生成（共有）</h3>
+          <p>プロフィール画像、試合記録画像、コメント付き画像などを生成して保存・共有。</p>
+          <div class="tip">「直近5試合／全試合」を選んで推移グラフを含めた画像出力も可能です。</div>
+          <img src="images/personal/step7.png" alt="個人向け画像生成と保存の画面" />
+        </li>
+      </ol>
+    </article>
+
+    <!-- サポート -->
+    <section id="support" class="card">
+      <h2>サポート</h2>
+      <p>不具合報告・ご要望は <a href="mailto:＜サポート用メール＞">メール</a> へ。スクリーンショットを添付いただくと原因特定が早くなります。</p>
+      <ul class="list-inline">
+        <li><a target="_blank" href="https://note.com/＜あなたのnoteの実リンク＞">note（アプリ紹介・更新情報）</a></li>
+        <li><a target="_blank" href="https://x.com/＜あなたのX＞">X（旧Twitter）</a></li>
+        <li><a target="_blank" href="https://instagram.com/＜あなたのInstagram＞">Instagram</a></li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
