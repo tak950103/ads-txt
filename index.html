@@ -15,10 +15,9 @@
     <!-- イントロ -->
     <section id="about" class="card">
       <h2>はじめに</h2>
-      <p>「宣伝込みの概要ガイド」は <a target="_blank" href="https://note.com/＜あなたのnoteの実リンク＞">note記事</a> に掲載しています。ここでは、<strong>実際に使い始めるための詳細な手順</strong>を説明します。</p>
+      <p>「アプリの紹介」は <a target="_blank" href="https://note.com/bright_ixia5175/n/n8eafc369d2af">note記事</a> に掲載しています。ここでは、<strong>実際に使い始めるための詳細な手順</strong>を説明します。</p>
       <ul class="checklist">
         <li>画像はイメージです。バージョンにより表示が異なる場合があります。</li>
-        <li>データは端末内に保存（Realm）されます。バックアップ方法は後述。</li>
       </ul>
     </section>
 
@@ -26,62 +25,79 @@
     <nav class="toc card" aria-label="ページ内目次">
       <h2>ガイド一覧</h2>
       <ol id="guides">
-        <li><a href="#club-flow">① クラブサポーター向け：ダウンロード → クラブ登録 → 選手登録 → 試合登録 → 評価 → 選手詳細 → 画像生成</a></li>
-        <li><a href="#personal-flow">② 個人選手向け：ダウンロード → 選手個人登録 → 試合登録 → 評価 → プロフィール入力 → 履歴確認 → 画像生成</a></li>
+        <li><a href="#club-flow">クラブ機能（クラブサポーター向け）：ダウンロード → クラブ登録 → 選手登録 → 試合登録 → 評価　その他：選手詳細、画像生成</a></li>
+        <li><a href="#personal-flow">選手個人機能（個人サポーター向け）：ダウンロード → 選手登録 → 試合登録 → 評価 その他：プロフィール入力、履歴確認、画像生成</a></li>
       </ol>
     </nav>
 
     <!-- Flow 1: クラブサポーター向け -->
     <article id="club-flow" class="card flow">
       <header class="flow-header">
-        <h2>① クラブサポーター向けの流れ</h2>
+        <h2>クラブサポーター向けの流れ</h2>
         <p class="flow-lead">クラブ単位で選手を管理し、試合ごとに採点。クラブカラーで画像を生成してSNSで共有できます。</p>
       </header>
 
       <ol class="steps">
         <li class="step">
           <h3>Step 1. ダウンロード</h3>
-          <p><a class="inline-cta" target="_blank" href="https://apps.apple.com/jp/app/＜あなたのアプリの実リンク＞">App Store</a> からアプリをインストール。</p>
-          <img src="images/club/step1.png" alt="App Storeからのダウンロード画面" />
+          <p><a class="inline-cta" target="_blank" href="https://apps.apple.com/jp/app/%E3%83%9E%E3%82%A4%E3%82%A4%E3%83%AC-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%AE%E9%81%B8%E6%89%8B%E8%A9%95%E4%BE%A1-%E8%A8%98%E9%8C%B2%E3%82%A2%E3%83%97%E3%83%AA/id6748753545">App Store</a> からアプリをインストール。</p>
         </li>
 
         <li class="step">
-          <h3>Step 2. クラブ登録（色設定）</h3>
-          <p>ホーム &rarr; <strong>クラブ追加</strong>。<br/>背景色・文字色をクラブカラーに設定すると、<strong>画像生成の配色</strong>に反映されます。</p>
-          <div class="tip">色は後から変更可能。文字色は可読性重視で調整を。</div>
-          <img src="images/club/step2.png" alt="クラブ追加とカラー設定画面" />
+          <h3>Step 2. クラブ登録</h3>
+          <p>ホーム &rarr; <strong>クラブ追加</strong>（「＋ 新規」ボタン）</p>
+          <img src="images/club/add-club.png" alt="クラブ追加" />
+          <img src="images/club/name-color.png" alt="名前とカラー設定画面" />
+          <p>背景色・文字色をクラブカラーに設定すると、<strong>画像生成の配色</strong>に反映されます。</p>
+          <div class="tip">色は後から変更可能です。文字色は可読性重視で調整をしてください。</div>
+          <p>続いて、<strong>シーズンを追加</strong>します。（「＋ 新規」ボタン）</p>
+          <img src="images/club/add-season.png" alt="シーズン追加" />
+          <img src="images/club/add-season2.png" alt="シーズン追加" />
+          <p>シーズン名を入力して、保存します。</p>
         </li>
 
         <li class="step">
-          <h3>Step 3. 選手登録（シーズン管理）</h3>
-          <p>クラブ詳細 &rarr; <strong>選手追加</strong>。シーズン単位で管理できます。<br/>過去シーズンからの引き継ぎも可能で、更新が簡単です。</p>
-          <img src="images/club/step3.png" alt="選手一覧と追加画面" />
+          <h3>Step 3. 選手登録</h3>
+          <p>ホーム &rarr; クラブ名 &rarr; <strong>選手設定</strong>（「⚙」ボタン）</p>
+          <img src="images/club/player-setting.png" alt="選手設定" />
+          <p>続いて、<strong>選手を追加</strong>します。（「＋ 選手追加」ボタン）</p>
+          <img src="images/club/add-player.png" alt="選手追加" />
+          <img src="images/club/add-player2.png" alt="選手追加画面" />
+          <p>シーズン単位で管理できます。<br/>過去シーズンからの引き継ぎも可能で、更新が簡単です。</p>
+          <img src="images/club/player-setting2.png" alt="選手一覧" />
         </li>
 
         <li class="step">
           <h3>Step 4. 試合登録</h3>
-          <p>シーズンを選択 &rarr; <strong>試合追加</strong>（試合名を入力）。</p>
-          <img src="images/club/step4.png" alt="試合追加画面" />
+          <p>ホーム &rarr; クラブ名 &rarr; 評価入力 &rarr; <strong>試合追加</strong>（「＋」ボタン）。</p>
+          <img src="images/club/add-match.png" alt="試合追加" />
+          <img src="images/club/add-match2.png" alt="試合追加" />
+          <p>試合名を入力してください。</p>
+          <div class="tip">試合名は後から変更可能です。</div>
         </li>
 
         <li class="step">
-          <h3>Step 5. 評価入力（★）とMOM</h3>
-          <p>試合を開き、各選手をタップして<strong>星評価</strong>を入力。<br/>MOM（マン・オブ・ザ・マッチ）も選出できます。<br/>一言メモで試合の感想を残せます。</p>
-          <div class="note">録画や観戦メモがある場合は短文でもOK。後で振り返りやすくなります。</div>
-          <img src="images/club/step5.png" alt="評価入力画面" />
+          <h3>Step 5. 評価入力（★）</h3>
+          <p>ホーム &rarr; クラブ名 &rarr; <strong>評価入力</strong></p>
+          <img src="images/club/rating.png" alt="評価入力画面" />
+          <p>試合名が入力されていることを確認して各選手の「未入力」欄をタップして<strong>星評価</strong>を入力できます。</p>
+          <img src="images/club/rating2.png" alt="★入力" />
+          <p>選手名をタップすると、各選手に対して試合の<strong>一言メモ(50文字まで)</strong>を残せます。</p>
+          <img src="images/club/comment.png" alt="一言メモ入力" />
+          <div class="note">短文でもOK。後で振り返りやすくなります。</div>
+          <p>「👑」ボタンから<strong>MOM（マン・オブ・ザ・マッチ）</strong>も選出できます。</p>
+          <img src="images/club/select-mom.png" alt="MOM選択" />
         </li>
 
         <li class="step">
-          <h3>Step 6. 選手詳細（統計）</h3>
-          <p>平均評価やMOM回数を自動集計。<br/>折れ線グラフで評価推移（直近5試合／全試合）を切替表示。</p>
-          <img src="images/club/step6.png" alt="選手詳細と評価推移グラフ" />
-        </li>
-
-        <li class="step">
-          <h3>Step 7. 画像生成（共有）</h3>
+          <h3>その他機能 選手詳細（統計）</h3>
+          <p>ホーム &rarr; クラブ名 &rarr; 選手一覧 &rarr; <strong>選手詳細</strong>（各選手をタップ）</p>
+          <p>平均評価やMOM回数を自動集計します。<br/>折れ線グラフで評価推移（直近5試合／全試合）を切替表示。</p>
+          <img src="images/club/player-detail.png" alt="選手詳細と評価推移グラフ" />
+          <h3>その他機能 画像生成（共有）</h3>
           <p>試合ごとの評価まとめ、選手一覧、選手詳細などを画像として保存。<br/>クラブカラーを活かしたデザインでSNSシェアに最適です。</p>
           <div class="tip">縦長画像はInstagramで2〜3分割して投稿すると見やすく表示できます。</div>
-          <img src="images/club/step7.png" alt="画像生成と保存の画面" />
+          <img src="images/club/post.png" alt="画像生成と保存の画面" />
         </li>
       </ol>
 
